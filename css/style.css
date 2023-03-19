@@ -1,0 +1,368 @@
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --primary-text-color: #8F95A5;
+    --secondary-text-color: #263238;
+    --accent-text-color: tomato;
+    --accent-background-color: tomato;
+    --color-title: #000000;
+    --color-logo: #939393;
+    --color-primary-btn: #FFFFFF;
+    --bgcolor-primary-btn: #263238;
+    --color-complementary: #2A3246;
+    --color-complementary-two: #546269;
+    --bgcolor-section: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 1338px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    /* outline: 2px solid red; */
+}
+
+.indent {
+    margin-bottom: 180px;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+
+/* ======= Components ======= */
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: calc(72/48);
+    color: var(--color-title);
+}
+
+/* ====== /Components ====== */
+
+/* ========= Header ========*/
+.header {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header-list {
+    display: flex;
+    gap: 50px;
+}
+
+.logo {
+    margin-right: 236px;
+    font-size: 36px;
+    line-height: calc(54/36);
+    color: var(--color-title);
+}
+
+.logo-part {
+    color: var(--color-logo);
+}
+
+.nav-link {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+    line-height: calc(30/20);
+    color: var(--secondary-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-text-color);
+}
+
+.header-btn {
+    min-width: 312px;
+    padding: 20px 0;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: calc(30/20);
+    letter-spacing: 0.03em;
+
+    background-color: transparent;
+    color: var(--color-title);
+    border: 2px solid var(--secondary-text-color);
+    border-radius: 10px;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    background-color: var(--accent-background-color);
+    color: var(--color-primary-btn);
+}
+
+.current {
+    color: var(--accent-text-color);
+}
+
+/* ========= /Header =========*/
+
+/* ======== Hero ============*/
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 144px;
+}
+
+.hero-title {
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: calc(80/64);
+    color: var(--color-title);
+}
+
+.hero-descr {
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: calc(36/24);
+}
+
+.hero-btn {
+    min-width: 426px;
+    padding: 23px 64px;
+    font-size: 36px;
+    line-height: calc(54/36);
+    letter-spacing: 0.03em;
+    color: var(--color-primary-btn);
+    background: var(--bgcolor-primary-btn);
+    border-radius: 10px;
+    border: transparent;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--accent-background-color);
+    color: var(--color-primary-btn);
+}
+
+/* ========= /Hero ==========*/
+
+/* ========= Skills =========*/
+.skills-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.skills-speaking {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.skills-writting {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.skills-reading {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.skills-listening {
+    grid-area: 2 / 2 / 3 / 4;
+}
+
+.skills-list .listening {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.skills-list-item {
+    background-color: var(--bgcolor-section);
+    border-radius: 10px;
+    ;
+}
+
+.skills-list .speaking {
+    padding: 32px 18px 154px;
+}
+
+.skills-list .writting,
+.skills-list .reading,
+.skills-list .listening {
+    padding: 32px 18px 32px;
+}
+
+.skills-list-title {
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    font-size: 30px;
+    line-height: calc(45/30);
+
+    color: var(--secondary-text-color);
+}
+
+.skills-list-descr {
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: calc(24/16);
+
+    color: var(--primary-text-color);
+}
+
+.skills-list-link {
+    display: inline-block;
+    padding: 15px 51px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(27/18);
+
+    color: var(--color-primary-btn);
+    background: var(--bgcolor-primary-btn);
+    border-radius: 10px;
+}
+
+.skills-list-link:hover,
+.skills-list-link:focus {
+    background-color: var(--accent-background-color);
+    color: var(--color-primary-btn);
+}
+
+/* ========= /Skills ========*/
+
+/* ======== About =========*/
+.about-descr {
+    line-height: calc(36/20);
+}
+
+.about-amount {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: calc(72/48);
+    color: var(--color-complementary);
+}
+
+.about-text {
+    line-height: calc(30/20);
+}
+
+/* ========= /About =========*/
+
+/* ========= Pricing ========*/
+.pricing-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: calc(48/30);
+    text-transform: capitalize;
+    color: var(--secondary-text-color);
+}
+
+.pricing-descr {
+    line-height: calc(30/20);
+}
+
+.pricing-value {
+    font-size: 24px;
+    line-height: calc(36/24);
+    color: var(--secondary-text-color);
+}
+
+
+.pricing-period {
+    font-size: 18px;
+    line-height: calc(27/18);
+    color: var(--color-complementary-two);
+}
+
+/* ======== /Pricing ========*/
+
+/* ======== Contacts ========*/
+.contacts-descr {
+    line-height: calc(30/20);
+}
+
+.contacts-btn {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(30/20);
+    letter-spacing: 0.03em;
+    color: var(--color-primary-btn);
+    background: var(--bgcolor-primary-btn);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contacts-btn:hover,
+.contacts-btn:focus {
+    background-color: var(--accent-background-color);
+    color: var(--color-primary-btn);
+}
+
+.footer-link {
+    font-size: 24px;
+    line-height: calc(36/24);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+/* ======= /Contacts ========*/
