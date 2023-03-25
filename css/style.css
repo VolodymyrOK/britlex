@@ -301,7 +301,7 @@ body {
 .about-container {
     display: flex;
     justify-content: space-between;
-    gap: 146px;
+    /* gap: 146px; */
 }
 
 .about-descr {
